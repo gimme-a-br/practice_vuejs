@@ -7,6 +7,8 @@ var app = new Vue({
       message: "Hello from JavaScript!",
       name: "",
       showExtraInfo: true,
+      fruits: ["apple", "banana", "cantaloupe"],
+      newFruit: "",
     };
   },
   methods: {
@@ -16,6 +18,9 @@ var app = new Vue({
     },
     toggleExtraInfo: function () {
       this.showExtraInfo = !this.showExtraInfo;
+    },
+    addNewFruit: function () {
+      this.fruits.push(this.newFruit);
     },
   },
 });

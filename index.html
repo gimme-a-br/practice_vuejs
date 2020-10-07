@@ -17,6 +17,14 @@
   <h1>Hello from HTML!</h1>
   <div id="app">
     <h1>{{ message }}</h1>
+    <div>
+      <h4>Add a fruit</h4>
+      Name: <input type="text" v-model="newFruit">
+      <button v-on:click="addNewFruit()">Add</button>
+    </div>
+    <div v-for="fruit in fruits">
+      <p>{{ fruit }}</p>
+    </div>
     <p>My name is {{ name }}</p>
     <button v-on:click="changeMessage()">Click me</button>
     Name: <input type="text" v-model="name">
