@@ -6,12 +6,16 @@ var app = new Vue({
     return {
       message: "Hello from JavaScript!",
       name: "",
+      showExtraInfo: true,
     };
   },
   methods: {
     changeMessage: function () {
       console.log("gonna change the message");
       this.message = "Whoa...";
+    },
+    toggleExtraInfo: function () {
+      this.showExtraInfo = !this.showExtraInfo;
     },
   },
 });

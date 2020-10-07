@@ -14,6 +14,15 @@
     <p>My name is {{ name }}</p>
     <button v-on:click="changeMessage()">Click me</button>
     Name: <input type="text" v-model="name">
+    <br>
+    <br>
+    <br>
+    <div>
+      <button v-on:click="toggleExtraInfo()">Toggle info</button>
+      <p v-if="showExtraInfo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae interdum urna. Mauris a ligula leo. Praesent id diam nunc. Nam varius interdum ligula sed fringilla. Aenean a pharetra turpis. Duis id risus et leo posuere iaculis. Curabitur blandit in augue eu pellentesque. In et congue enim, at suscipit massa. Nulla iaculis auctor elit, sit amet luctus turpis sodales eu. Sed consequat elit a finibus lacinia. Suspendisse sit amet eros non neque placerat hendrerit a id enim. Nam orci leo, viverra eget accumsan eu, malesuada ultricies ligula. Etiam malesuada justo a pellentesque maximus. Phasellus ornare ac velit sit amet tincidunt.
+      </p>
+    </div>
   </div>
 </body>
 </html>
